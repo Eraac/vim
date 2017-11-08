@@ -17,3 +17,6 @@ execute pathogen#infect()
 
 " Ctrl+n open NERDTree
 map <C-n> :NERDTreeToggle<CR>
+
+set listchars=tab:>-
+
