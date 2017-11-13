@@ -9,6 +9,7 @@
     git clone https://github.com/easymotion/vim-easymotion
     git clone https://github.com/raimondi/delimitmate
     git clone https://github.com/bling/vim-airline
+    git clone https://github.com/ervandew/supertab
 
 # TODO
 * add documentation
