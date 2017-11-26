@@ -1,4 +1,5 @@
 syntax enable
+color monokai
 set tabstop=4
 set softtabstop=4
 set expandtab
@@ -7,8 +8,11 @@ set showcmd
 set cursorline
 filetype indent on
 set showmatch
+set ignorecase
+set smartcase
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set scrolloff=10
 nnoremap B ^
 nnoremap E $
 
@@ -19,7 +23,8 @@ execute pathogen#infect()
 map <C-n> :NERDTreeToggle<CR>
 
 " ;set list display as ">---"
-set listchars=tab:>-
+set listchars=tab:>-,trail:.,eol:¬
+set list
 
 " open split more naturaly
 set splitbelow
@@ -31,6 +36,8 @@ map <Tab> <C-W>w
 " fix backspace doesn't work sometimes
 set backspace=indent,eol,start
 
-" select line correctly when vim is split
-set mouse=a
+nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
+
+vmap <C-x> :!pbcopy<CR>
+vmap <C-c> :w !pbcopy<CR><CR>
 
