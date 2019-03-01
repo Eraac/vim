@@ -11,6 +11,5 @@
     git clone https://github.com/bling/vim-airline
     git clone https://github.com/ervandew/supertab
     git clone https://github.com/elzr/vim-json.git
+    git clone https://github.com/hashivim/vim-terraform.git
 
-# TODO
-* add documentation
